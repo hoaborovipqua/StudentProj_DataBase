@@ -1,0 +1,13 @@
+C:\Documents\OOP_Uni\QuanLySinhVien\DAL\bin\Debug\netcoreapp3.1\DAL.deps.json
+C:\Documents\OOP_Uni\QuanLySinhVien\DAL\bin\Debug\netcoreapp3.1\DAL.dll
+C:\Documents\OOP_Uni\QuanLySinhVien\DAL\bin\Debug\netcoreapp3.1\DAL.pdb
+C:\Documents\OOP_Uni\QuanLySinhVien\DAL\bin\Debug\netcoreapp3.1\DTO.dll
+C:\Documents\OOP_Uni\QuanLySinhVien\DAL\bin\Debug\netcoreapp3.1\DTO.pdb
+C:\Documents\OOP_Uni\QuanLySinhVien\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.AssemblyReference.cache
+C:\Documents\OOP_Uni\QuanLySinhVien\DAL\obj\Debug\netcoreapp3.1\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Documents\OOP_Uni\QuanLySinhVien\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfoInputs.cache
+C:\Documents\OOP_Uni\QuanLySinhVien\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfo.cs
+C:\Documents\OOP_Uni\QuanLySinhVien\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.CoreCompileInputs.cache
+C:\Documents\OOP_Uni\QuanLySinhVien\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.CopyComplete
+C:\Documents\OOP_Uni\QuanLySinhVien\DAL\obj\Debug\netcoreapp3.1\DAL.dll
+C:\Documents\OOP_Uni\QuanLySinhVien\DAL\obj\Debug\netcoreapp3.1\DAL.pdb

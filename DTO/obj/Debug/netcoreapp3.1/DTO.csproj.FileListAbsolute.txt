@@ -1,0 +1,10 @@
+C:\Documents\OOP_Uni\QuanLySinhVien\DTO\bin\Debug\netcoreapp3.1\DTO.deps.json
+C:\Documents\OOP_Uni\QuanLySinhVien\DTO\bin\Debug\netcoreapp3.1\DTO.dll
+C:\Documents\OOP_Uni\QuanLySinhVien\DTO\bin\Debug\netcoreapp3.1\DTO.pdb
+C:\Documents\OOP_Uni\QuanLySinhVien\DTO\obj\Debug\netcoreapp3.1\DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Documents\OOP_Uni\QuanLySinhVien\DTO\obj\Debug\netcoreapp3.1\DTO.AssemblyInfoInputs.cache
+C:\Documents\OOP_Uni\QuanLySinhVien\DTO\obj\Debug\netcoreapp3.1\DTO.AssemblyInfo.cs
+C:\Documents\OOP_Uni\QuanLySinhVien\DTO\obj\Debug\netcoreapp3.1\DTO.csproj.CoreCompileInputs.cache
+C:\Documents\OOP_Uni\QuanLySinhVien\DTO\obj\Debug\netcoreapp3.1\DTO.dll
+C:\Documents\OOP_Uni\QuanLySinhVien\DTO\obj\Debug\netcoreapp3.1\DTO.pdb
+C:\Documents\OOP_Uni\QuanLySinhVien\DTO\obj\Debug\netcoreapp3.1\DTO.csproj.AssemblyReference.cache
