@@ -1,5 +1,0 @@
-C:\Documents\OOP_Uni\QuanLySinhVien\GUI\obj\Debug\netcoreapp3.1\GUI.csproj.AssemblyReference.cache
-C:\Documents\OOP_Uni\QuanLySinhVien\GUI\obj\Debug\netcoreapp3.1\GUI.GeneratedMSBuildEditorConfig.editorconfig
-C:\Documents\OOP_Uni\QuanLySinhVien\GUI\obj\Debug\netcoreapp3.1\GUI.AssemblyInfoInputs.cache
-C:\Documents\OOP_Uni\QuanLySinhVien\GUI\obj\Debug\netcoreapp3.1\GUI.AssemblyInfo.cs
-C:\Documents\OOP_Uni\QuanLySinhVien\GUI\obj\Debug\netcoreapp3.1\GUI.csproj.CoreCompileInputs.cache
