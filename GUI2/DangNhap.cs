@@ -36,17 +36,25 @@ namespace GUI2
                     return;
                 case "required_matkhau":
                     MessageBox.Show("Mật khẩu không được để trống!");
-                    return;
+                    return; 
                 case "Tài Khoản hoặc mật khẩu không tồn tại!":
                     MessageBox.Show("Tài khoản hoặc mật khẩu không chính xác!");
                     return;
             }
             MessageBox.Show("Đăng nhập thành công!");
+            this.Hide();
+            DashBoard dsb = new DashBoard();
+            dsb.Show();
         }
 
         private void bt_Exit_Click(object sender, EventArgs e)
         {
             this.Close(); // Đóng form hiện tại
+        }
+
+        private void DangNhap_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

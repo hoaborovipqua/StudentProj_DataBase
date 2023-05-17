@@ -4,9 +4,9 @@ using System.Text;
 
 
 // phuc vu cho viec tra cuu sinh vien tu phong hoc 
-namespace SinhVien
+namespace DTO
 {
-    class TraPhongHoc
+    public class TraPhongHoc
     {
         // maph_mamh la khoa chinh
         string MaPH_MaMH, tietHoc;

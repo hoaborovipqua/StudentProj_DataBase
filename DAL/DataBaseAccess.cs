@@ -13,7 +13,7 @@ namespace DAL
         public static SqlConnection Connect()
         {
             // Tạo chuỗi kết nối cơ sở dữ liệu 
-            string strcon = @"Data Source=LAPTOP-92VCKNC0\SQLEXPRESS;Initial Catalog=QuanLySinhVien;Integrated Security=True";
+            string strcon = @"Data Source=LAPTOP-92VCKNC0\SQLEXPRESS;Initial Catalog=QLSV;Integrated Security=True";
             // khởi tạo connect 
             SqlConnection conn = new SqlConnection(strcon);
             return conn;
@@ -37,8 +37,6 @@ namespace DAL
             command.Parameters.AddWithValue("@user", taiKhoan.sTaiKhoan);
             command.Parameters.AddWithValue("@pass", taiKhoan.sMatKhau);
 
-            // kiểm tra quyền (chưa chắc) 
-            //command.Parameters.AddWithValue("@Quyen", quyen.sTenQuyen);
 
             SqlDataReader reader = command.ExecuteReader();
             if (reader.HasRows)

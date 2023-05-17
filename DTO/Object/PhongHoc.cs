@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SinhVien
+namespace DTO
 {
-    class PhongHoc
+    public class PhongHoc
     {
         string maPhong, tenPhong, diaChi;
 
@@ -20,15 +20,15 @@ namespace SinhVien
         public string TenPhong { get => tenPhong; set => tenPhong = value; }
         public string DiaChi { get => diaChi; set => diaChi = value; }
 
-        public void nhap_PH_Console()
-        {
-            Console.Write("Nhap vao ma phong: ");
-            this.maPhong = Console.ReadLine();
-            Console.Write("Nhap vao ten phong: ");
-            this.tenPhong = Console.ReadLine();
-            Console.Write("Nhap vao dia chi: ");
-            this.diaChi = Console.ReadLine();
-        }
+        //public void nhap_PH_Console()
+        //{
+        //    Console.Write("Nhap vao ma phong: ");
+        //    this.maPhong = Console.ReadLine();
+        //    Console.Write("Nhap vao ten phong: ");
+        //    this.tenPhong = Console.ReadLine();
+        //    Console.Write("Nhap vao dia chi: ");
+        //    this.diaChi = Console.ReadLine();
+        //}
 
     }
 }

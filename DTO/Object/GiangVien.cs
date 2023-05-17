@@ -2,36 +2,37 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SinhVien
+namespace DTO
 {
-    class GiangVien : Nguoi
+    public class GiangVien : Nguoi
     {
-        string maGV;
-        Khoa khoa_GV = new Khoa();
+        string MaGV, MaKhoa, MaDD;
+
+        public string MaGV1 { get => MaGV; set => MaGV = value; }
+        public string MaKhoa1 { get => MaKhoa; set => MaKhoa = value; }
+        public string MaDD2 { get => MaDD; set => MaDD = value; }
+
+        public GiangVien(string maGV, string maKhoa, string maDD)
+        {
+            this.MaGV1 = maGV;
+            MaKhoa1 = maKhoa;
+            MaDD2 = maDD;
+        }
 
         public GiangVien() { }
 
-        public GiangVien(string maGV, Khoa khoa_GV, string pSsn, string pHoTen, string pNgaySinh, string pDiaChi):base(pSsn, pHoTen, pNgaySinh,  pDiaChi)
-        {
-            this.MaGV = maGV;
-            this.Khoa_GV = khoa_GV;
-        }
-
-        public string MaGV { get => maGV; set => maGV = value; }
-        internal Khoa Khoa_GV { get => khoa_GV; set => khoa_GV = value; }
-
-        public void nhap_GV_Console()
-        {
-            Console.Write("Nhap vao ma GV: ");
-            this.maGV = Console.ReadLine();
-            this.khoa_GV.nhap_Khoa_Console();
-        }
-        public override void xuat()
-        {
-            Console.Write("{0} /", this.maGV);
-            this.khoa_GV.xuat();
-            base.xuat();
-        }
+        //public void nhap_GV_Console()
+        //{
+        //    Console.Write("Nhap vao ma GV: ");
+        //    this.maGV = Console.ReadLine();
+        //    this.khoa_GV.nhap_Khoa_Console();
+        //}
+        //public override void xuat()
+        //{
+        //    Console.Write("{0} /", this.maGV);
+        //    this.khoa_GV.xuat();
+        //    base.xuat();
+        //}
 
         
     }

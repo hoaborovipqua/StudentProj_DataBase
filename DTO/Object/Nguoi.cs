@@ -2,31 +2,33 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SinhVien
+namespace DTO
 {
-    class Nguoi
+    public class Nguoi
     {
-        string ssn, hoTen, ngaySinh, diaChi;
+        protected string MaDD, HoTen, NamSinh, GioiTinh;
 
-        public static string gioiTinh = "NU";
+        public string MaDD1 { get => MaDD; set => MaDD = value; }
+        public string HoTen1 { get => HoTen; set => HoTen = value; }
+        public string NamSinh1 { get => NamSinh; set => NamSinh = value; }
+        public string GioiTinh1 { get => GioiTinh; set => GioiTinh = value; }
+
+        public Nguoi(string maDD, string hoTen, string namSinh, string gioiTinh)
+        {
+            this.MaDD1 = maDD;
+            this.HoTen1 = hoTen;
+            NamSinh1 = namSinh;
+            GioiTinh1 = gioiTinh;
+        }
 
         public Nguoi() { }
-        public Nguoi(string ssn, string hoTen, string ngaySinh, string diaChi)
-        {
-            this.ssn = ssn;
-            this.hoTen = hoTen;
-            this.ngaySinh = ngaySinh;
-            this.diaChi = diaChi;
-        }
-        public string Ssn { get => ssn; set => ssn = value; }
-        public string HoTen { get => hoTen; set => hoTen = value; }
-        public string NgaySinh { get => ngaySinh; set => ngaySinh = value; }
-        public string DiaChi { get => diaChi; set => diaChi = value; }
+        
 
-        public virtual void xuat()
-        {
-            Console.WriteLine("{0} / {1} / {2} / {3} ", this.ssn, this.hoTen, this.ngaySinh, this.diaChi);
-        }
+
+        //public virtual void xuat()
+        //{
+        //    Console.WriteLine("{0} / {1} / {2} / {3} ", this.MaDD, this.hoTen, this.ngaySinh, this.diaChi);
+        //}
 
 
     }

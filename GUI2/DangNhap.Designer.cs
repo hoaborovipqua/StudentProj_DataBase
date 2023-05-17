@@ -1,7 +1,7 @@
 ﻿
 namespace GUI2
 {
-    partial class DangNhap
+    public partial class DangNhap
     {
         /// <summary>
         /// Required designer variable.
@@ -141,7 +141,8 @@ namespace GUI2
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
             this.Name = "DangNhap";
-            this.Text = "Đăng Nhập";
+            this.Text = "5";
+            this.Load += new System.EventHandler(this.DangNhap_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

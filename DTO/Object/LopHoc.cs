@@ -2,42 +2,41 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SinhVien
+namespace DTO
 {
-    class LopHoc
+    public class LopHoc
     {
-        string maLH, tenLH;
-        GiangVien gvCoVan = new GiangVien();
+        string MaLop, TenLop, MaKhoa;
+        int SoThuTu;
 
         public LopHoc() { }
-        public LopHoc(string maLH, string tenLH, GiangVien gvCoVan)
+
+        public LopHoc(string maLop, string tenLop, string maKhoa, int soThuTu)
         {
-            this.maLH = maLH;
-            this.tenLH = tenLH;
-            this.GvCoVan = gvCoVan;
-        }
-        public LopHoc(string maLH, string tenLH)
-        {
-            this.maLH = maLH;
-            this.tenLH = tenLH;
+            MaLop1 = maLop;
+            TenLop1 = tenLop;
+            MaKhoa1 = maKhoa;
+            SoThuTu1 = soThuTu;
         }
 
-        public string MaLH { get => maLH; set => maLH = value; }
-        public string TenLH { get => tenLH; set => tenLH = value; }
-        internal GiangVien GvCoVan { get => gvCoVan; set => gvCoVan = value; }
+        public string MaLop1 { get => MaLop; set => MaLop = value; }
+        public string TenLop1 { get => TenLop; set => TenLop = value; }
+        public string MaKhoa1 { get => MaKhoa; set => MaKhoa = value; }
+        public int SoThuTu1 { get => SoThuTu; set => SoThuTu = value; }
 
-        public void nhap_LH_Console()
-        {
-            Console.Write("Nhap vao ma Lop Hoc: ");
-            this.maLH = Console.ReadLine();
-            Console.Write("Nhap vao ten Lop Hoc: ");
-            this.tenLH = Console.ReadLine();
-            this.GvCoVan.nhap_GV_Console();
-        }
 
-        public void xuat_LopHoc_Console()
-        {
-            Console.Write("{0} / {1}", this.maLH, this.tenLH, this.gvCoVan.HoTen); // co the xuat gvCoVan O day
-        }
+        //public void nhap_LH_Console()
+        //{
+        //    Console.Write("Nhap vao ma Lop Hoc: ");
+        //    this.maLH = Console.ReadLine();
+        //    Console.Write("Nhap vao ten Lop Hoc: ");
+        //    this.tenLH = Console.ReadLine();
+        //    this.GvCoVan.nhap_GV_Console();
+        //}
+
+        //public void xuat_LopHoc_Console()
+        //{
+        //    Console.Write("{0} / {1}", this.maLH, this.tenLH, this.gvCoVan.HoTen); // co the xuat gvCoVan O day
+        //}
     }
 }
