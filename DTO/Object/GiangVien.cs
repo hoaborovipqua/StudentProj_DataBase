@@ -6,18 +6,19 @@ namespace DTO
 {
     public class GiangVien : Nguoi
     {
-        string MaGV, MaKhoa, MaDD;
+        string MaGV, MaKhoa, MaDD_GV;
+
+        public GiangVien(string maGV, string maKhoa, string maDD_GV)
+        {
+            MaGV = maGV;
+            MaKhoa = maKhoa;
+            MaDD_GV = maDD_GV;
+        }
 
         public string MaGV1 { get => MaGV; set => MaGV = value; }
         public string MaKhoa1 { get => MaKhoa; set => MaKhoa = value; }
-        public string MaDD2 { get => MaDD; set => MaDD = value; }
+        public string MaDD_GV1 { get => MaDD_GV; set => MaDD_GV = value; }
 
-        public GiangVien(string maGV, string maKhoa, string maDD)
-        {
-            this.MaGV1 = maGV;
-            MaKhoa1 = maKhoa;
-            MaDD2 = maDD;
-        }
 
         public GiangVien() { }
 

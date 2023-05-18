@@ -14,7 +14,7 @@ namespace DTO
 
         public SinhVien() { }
 
-        public SinhVien(string maDD, string hoTen, string namSinh, string gioiTinh, string maSV, string sv_MaLop):base(maDD, hoTen, namSinh, gioiTinh)
+        public SinhVien(string maDD, string hoTen, int namSinh, string gioiTinh, string maSV, string sv_MaLop):base(maDD, hoTen, namSinh, gioiTinh)
         {
             MaSV = maSV;
             this.sv_MaLop = sv_MaLop;

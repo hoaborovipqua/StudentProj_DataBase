@@ -11,6 +11,33 @@ namespace DAL
     {
         public List<GiangVien> list_GV = new List<GiangVien>();
 
+
+        SqlConnection conn = SqlConnectionData.Connect();
+
+        public ListGV()
+        {
+
+        }
+
+        public List<GiangVien> Load()
+        {
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("select * from GiangVien", conn);
+
+            SqlDataReader rd = cmd.ExecuteReader();
+
+            while (rd.Read())
+            {
+                GiangVien gv = new GiangVien();
+                gv.MaGV1 = rd["MaGV"].ToString();
+                gv.MaKhoa1 = rd["MaKhoa"].ToString();
+                gv.MaDD_GV1 = rd["MaDD"].ToString();
+                list_GV.Add(gv);
+            }
+
+            return list_GV;
+        }
+
         //public void Nhap(string filePath)
         //{
         //    StreamReader reader = new StreamReader(filePath);

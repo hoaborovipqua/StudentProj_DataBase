@@ -3,17 +3,19 @@ using System.Collections.Generic;
 using System.Text;
 using DTO;
 using DAL;
+using DTO.Object;
 using DAL.List_Object;
+
 
 namespace BLL
 {
-    public class NguoiBLL
+    public class MonHocBLL
     {
-        ListNguoi dsNguoi = new ListNguoi();
+        ListMonHoc dsMonHoc = new ListMonHoc();
 
-        public List<Nguoi> Load()
+        public List<MonHoc> Load()
         {
-            return dsNguoi.Load();
+            return dsMonHoc.Load();
         }
     }
 }

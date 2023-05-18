@@ -10,6 +10,32 @@ namespace DAL
     {
         public List<Khoa> list_Khoa = new List<Khoa>();
 
+        SqlConnection conn = SqlConnectionData.Connect();
+
+        public ListKhoa()
+        {
+
+        }
+
+        public List<Khoa> Load()
+        {
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("select * from Khoa", conn);
+
+            SqlDataReader rd = cmd.ExecuteReader();
+
+            while (rd.Read())
+            {
+                Khoa khoa = new Khoa();
+                khoa.MaKhoa1 = rd["Makhoa"].ToString();
+                khoa.TenKhoa1 = rd["TenKhoa"].ToString();
+                khoa.NamThanhLap1 = int.Parse(rd["NamThanhLap"].ToString());
+                list_Khoa.Add(khoa);
+            }
+
+            return list_Khoa;
+        }
+
 
         // xem list khoa và chọn 
         //public Khoa xem_va_chon()

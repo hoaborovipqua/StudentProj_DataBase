@@ -3,17 +3,18 @@ using System.Collections.Generic;
 using System.Text;
 using DTO;
 using DAL;
+using DTO.Object;
 using DAL.List_Object;
 
 namespace BLL
 {
-    public class NguoiBLL
+    public class HocKyBLL
     {
-        ListNguoi dsNguoi = new ListNguoi();
+        ListHocKy dsHocKy = new ListHocKy();
 
-        public List<Nguoi> Load()
+        public List<HocKy> Load()
         {
-            return dsNguoi.Load();
+            return dsHocKy.Load();
         }
     }
 }
