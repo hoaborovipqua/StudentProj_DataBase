@@ -20,6 +20,8 @@ namespace GUI2
         public static KhoaBLL dt8 = new KhoaBLL();
         public static MonHocBLL dt9 = new MonHocBLL();
         public static SinhVien_DiemRL_BLL dt10 = new SinhVien_DiemRL_BLL();
+        public static ChiTietDangKiMonHocBLL dt11 = new ChiTietDangKiMonHocBLL();
+        public static GiangVien_MonHocBLL dt12 = new GiangVien_MonHocBLL();
 
 
         public static List<Lop> dsLop = new List<Lop>();
@@ -32,6 +34,8 @@ namespace GUI2
         public static List<Khoa> dsKhoa = new List<Khoa>();
         public static List<MonHoc> dsMonHoc = new List<MonHoc>();
         public static List<SinhVien_DiemRL> dsSinhVien_DiemRL = new List<SinhVien_DiemRL>();
+        public static List<ChiTietDangKiMonHoc> dsChiTietDangKiMonHoc = new List<ChiTietDangKiMonHoc>();
+        public static List<GiangVien_MonHoc> dsGiangVien_MonHoc = new List<GiangVien_MonHoc>();
 
 
         public static void Load_dsLop()
@@ -71,10 +75,22 @@ namespace GUI2
         {
             dsMonHoc = dt9.Load();
         }
+
         public static void Load_SinhVien_DiemRL()
         {
             dsSinhVien_DiemRL = dt10.Load();
         }
+
+        public static void Load_ChiTietDangKiMonHoc()
+        {
+            dsChiTietDangKiMonHoc = dt11.Load();
+        }
+
+        public static void Load_GiangVien_MonHoc()
+        {
+            dsGiangVien_MonHoc = dt12.Load();
+        }
+
 
     }
 }

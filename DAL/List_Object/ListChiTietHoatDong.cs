@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
 using System.Text;
+using System.Data.SqlClient;
 using DTO;
 using DTO.Object;
 
@@ -33,7 +33,7 @@ namespace DAL.List_Object
                 cthd.MaHD_CTHD1 = rd["MaHD"].ToString();
                 list_cthd.Add(cthd);
             }
-
+            conn.Close();
             return list_cthd;
         }
     }

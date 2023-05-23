@@ -32,7 +32,7 @@ namespace DAL
                 khoa.NamThanhLap1 = int.Parse(rd["NamThanhLap"].ToString());
                 list_Khoa.Add(khoa);
             }
-
+            conn.Close();
             return list_Khoa;
         }
 

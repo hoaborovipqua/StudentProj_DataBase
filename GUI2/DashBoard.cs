@@ -6,6 +6,9 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using DTO;
+using BLL;
+using DTO.Object;
 
 namespace GUI2
 {
@@ -40,7 +43,18 @@ namespace GUI2
         {
             ShowStudentsGUI show = new ShowStudentsGUI();
             show.Show();
+        }
 
+        private void addActivityToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddActivityForm addActivity = new AddActivityForm();
+            addActivity.Show();
+        }
+
+        private void addSubjectToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            RegisterCourseForm register = new RegisterCourseForm();
+            register.Show();
         }
     }
 }

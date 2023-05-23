@@ -33,7 +33,7 @@ namespace DAL.List_Object
                 hocky.NamHoc1 = int.Parse(rd["NamHoc"].ToString());
                 list_hocky.Add(hocky);
             }
-
+            conn.Close();
             return list_hocky;
         }
     }

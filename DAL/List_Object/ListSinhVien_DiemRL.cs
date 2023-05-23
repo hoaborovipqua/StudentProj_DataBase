@@ -33,7 +33,7 @@ namespace DAL.List_Object
                 sv_drl.DiemRl1 = int.Parse(rd["DiemRL"].ToString());
                 list_sv_drl.Add(sv_drl);
             }
-
+            conn.Close();
             return list_sv_drl;
         }
     }

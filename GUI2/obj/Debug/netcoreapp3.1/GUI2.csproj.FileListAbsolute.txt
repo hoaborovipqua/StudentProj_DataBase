@@ -30,3 +30,7 @@ C:\Documents\OOP_Uni\QuanLySinhVien\GUI2\obj\Debug\netcoreapp3.1\GUI2.DangNhap.r
 C:\Documents\OOP_Uni\QuanLySinhVien\GUI2\obj\Debug\netcoreapp3.1\GUI2.DashBoard.resources
 C:\Documents\OOP_Uni\QuanLySinhVien\GUI2\obj\Debug\netcoreapp3.1\GUI2.Properties.Resources.resources
 C:\Documents\OOP_Uni\QuanLySinhVien\GUI2\obj\Debug\netcoreapp3.1\GUI2.ShowStudentsGUI.resources
+C:\Documents\OOP_Uni\QuanLySinhVien\GUI2\obj\Debug\netcoreapp3.1\GUI2.AddActivityForm.resources
+C:\Documents\OOP_Uni\QuanLySinhVien\GUI2\obj\Debug\netcoreapp3.1\GUI2.RegisterCourseForm.resources
+C:\Documents\OOP_Uni\QuanLySinhVien\GUI2\obj\Debug\netcoreapp3.1\GUI2.ShowListSubject.resources
+C:\Documents\OOP_Uni\QuanLySinhVien\GUI2\obj\Debug\netcoreapp3.1\GUI2.InputSubject.resources

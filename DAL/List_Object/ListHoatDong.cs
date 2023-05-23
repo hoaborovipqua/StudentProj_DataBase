@@ -33,7 +33,7 @@ namespace DAL.List_Object
                 hd.DiemCong1 = int.Parse(rd["DiemCong"].ToString());
                 list_hd.Add(hd);
             }
-
+            conn.Close();
             return list_hd;
         }
     }

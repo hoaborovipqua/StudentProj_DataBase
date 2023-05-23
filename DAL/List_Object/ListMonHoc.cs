@@ -33,21 +33,9 @@ namespace DAL
                 mh.MaKhoa1 = rd["MaKhoa"].ToString();
                 list_mh.Add(mh);
             }
-
+            conn.Close();
             return list_mh;
         }
-
-        //public void Nhap(string filePath)
-        //{
-        //    StreamReader reader = new StreamReader(filePath);
-        //    string line;
-        //    while ((line = reader.ReadLine()) != null)
-        //    {
-        //        string[] t_monhoc = line.Split(',');
-        //        MonHoc mh = new MonHoc(t_monhoc[0], t_monhoc[1], int.Parse(t_monhoc[2]));
-        //        list_MH.Add(mh);
-        //    }
-        //}
 
 
     }

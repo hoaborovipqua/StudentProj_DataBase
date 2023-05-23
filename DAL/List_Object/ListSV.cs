@@ -34,7 +34,7 @@ namespace DAL
                 sv.Sv_MaLop = rd["MaLop"].ToString();
                 list_SV.Add(sv);
             }
-
+            conn.Close();
             return list_SV;
         }
 

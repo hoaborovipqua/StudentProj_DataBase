@@ -35,6 +35,7 @@ namespace DAL.List_Object
                 list_Ng.Add(ng);
             }
 
+            conn.Close();
             return list_Ng;
         }
     }

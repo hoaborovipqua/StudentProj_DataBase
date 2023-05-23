@@ -34,6 +34,7 @@ namespace DAL.List_Object
                 lh.SoThuTu1 = int.Parse(rd["SoThuTu"].ToString());
                 list_LH.Add(lh);               
             }
+            conn.Close();
 
             return list_LH;
         }

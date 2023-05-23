@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using DTO;
 using DAL;
+using System.Linq;
 
 namespace BLL
 {
@@ -14,5 +15,11 @@ namespace BLL
         {
             return dsSV.Load();
         }
+
+        public static bool checkExitStuID(string pstuid, List<SinhVien> lsstu)
+        {   
+            return lsstu.Any(x => x.MaSV1 == pstuid);
+        }
+
     }
 }

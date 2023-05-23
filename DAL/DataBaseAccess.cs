@@ -18,6 +18,15 @@ namespace DAL
             SqlConnection conn = new SqlConnection(strcon);
             return conn;
         }
+
+
+        //string strcon = @"Data Source=LAPTOP-92VCKNC0\SQLEXPRESS;Initial Catalog=QLSV;Integrated Security=True";
+        //SqlConnection conn;
+        //public SqlConnectionData()
+        //{
+        //    Conn = new SqlConnection(strcon);
+        //}
+        //public SqlConnection Conn { get => conn; set => conn = value; }
     }
 
 

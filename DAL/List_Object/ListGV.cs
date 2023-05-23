@@ -34,7 +34,7 @@ namespace DAL
                 gv.MaDD_GV1 = rd["MaDD"].ToString();
                 list_GV.Add(gv);
             }
-
+            conn.Close();
             return list_GV;
         }
 
