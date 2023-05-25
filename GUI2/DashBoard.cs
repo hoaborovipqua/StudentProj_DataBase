@@ -46,6 +46,9 @@ namespace GUI2
 
         private void addActivityToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            // gọi luôn bảng hoạt động 
+            ShowActivities showActivities = new ShowActivities();
+            showActivities.Show();
             AddActivityForm addActivity = new AddActivityForm();
             addActivity.Show();
         }

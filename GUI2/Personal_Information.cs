@@ -39,6 +39,10 @@ namespace GUI2
             subjectsRegistered_Student.Show();
         }
 
-
+        private void button2_Click(object sender, EventArgs e)
+        {
+            TrainingPointsInformation trainingPointsInformation = new TrainingPointsInformation();
+            trainingPointsInformation.Show();
+        }
     }
 }

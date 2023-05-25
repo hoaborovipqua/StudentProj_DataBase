@@ -16,5 +16,17 @@ namespace BLL
         {
             return dsSinhVien_DiemRL.Load();
         }
+
+        public static (string , string,  int ) GetTrainingPoint(string pstuID, string psemesterID)
+        {
+            if (HocKyBLL.CheckSemesterID(psemesterID))
+            {
+                return ListSinhVien_DiemRL_DiemRL.GetTrainingPoint(pstuID, psemesterID);
+            }
+            else
+            {
+                return ("", "", 0);
+            }
+        }
     }
 }

@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 using System.Text;
 using DTO;
 using DTO.Object;
+using System.Linq;
 
 namespace DAL.List_Object
 {
@@ -36,5 +37,26 @@ namespace DAL.List_Object
             conn.Close();
             return list_sv_drl;
         }
+
+        public static (string, string, int) GetTrainingPoint(string pstuID, string psemesterID)
+        {
+            ListSV listSV = new ListSV();
+            List<SinhVien> sinhViens = listSV.Load();
+            string ssn = sinhViens.FirstOrDefault(x => x.MaSV1 == pstuID)?.Sv_maDD;
+
+            ListNguoi listNguoi = new ListNguoi();
+            List<Nguoi> nguois = listNguoi.Load();
+
+            ListHocKy listHocKy = new ListHocKy();
+            List<HocKy> hocKies = listHocKy.Load();
+
+            ListSinhVien_DiemRL_DiemRL listSinhVien_DiemRL_DiemRL = new ListSinhVien_DiemRL_DiemRL();
+            List<SinhVien_DiemRL> sinhVien_DiemRLs1 = listSinhVien_DiemRL_DiemRL.Load();
+
+
+            return (nguois.FirstOrDefault(x => x.MaDD1 == ssn)?.HoTen1, hocKies.FirstOrDefault(x => x.MaHK1 == psemesterID)?.TenHK1, 
+                sinhVien_DiemRLs1.FirstOrDefault(x => x.MaSV_DRL1 == pstuID && x.MaHK_DRL1 == psemesterID).DiemRl1);
+        }
+
     }
 }

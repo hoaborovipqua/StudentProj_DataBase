@@ -31,6 +31,9 @@
     <Compile Update="RegisterCourseForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="ShowActivities.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="ShowListSubject.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -38,6 +41,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="SubjectsRegistered_Student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TrainingPointsInformation.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="ViewListClass.cs">

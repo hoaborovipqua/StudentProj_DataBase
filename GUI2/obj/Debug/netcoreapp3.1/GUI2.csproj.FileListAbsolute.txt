@@ -42,3 +42,5 @@ C:\Documents\OOP_Uni\QuanLySinhVien\GUI2\obj\Debug\netcoreapp3.1\GUI2.csproj.Cop
 C:\Documents\OOP_Uni\QuanLySinhVien\GUI2\obj\Debug\netcoreapp3.1\GUI2.dll
 C:\Documents\OOP_Uni\QuanLySinhVien\GUI2\obj\Debug\netcoreapp3.1\GUI2.pdb
 C:\Documents\OOP_Uni\QuanLySinhVien\GUI2\obj\Debug\netcoreapp3.1\GUI2.genruntimeconfig.cache
+C:\Documents\OOP_Uni\QuanLySinhVien\GUI2\obj\Debug\netcoreapp3.1\GUI2.TrainingPointsInformation.resources
+C:\Documents\OOP_Uni\QuanLySinhVien\GUI2\obj\Debug\netcoreapp3.1\GUI2.ShowActivities.resources

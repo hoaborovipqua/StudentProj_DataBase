@@ -20,6 +20,7 @@ namespace DAL.List_Object
 
         public List<HoatDong> Load()
         {
+            list_hd.Clear();
             conn.Open();
             SqlCommand cmd = new SqlCommand("select * from HoatDong", conn);
 
