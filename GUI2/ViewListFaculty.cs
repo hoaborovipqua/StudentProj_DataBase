@@ -28,8 +28,6 @@ namespace GUI2
             dataGridView1.Columns["MaKhoa1"].HeaderText = "FacultyID";
             dataGridView1.Columns["TenKhoa1"].HeaderText = "FacultyName";
             dataGridView1.Columns["NamThanhLap1"].HeaderText = "FoundedYear";
-
-
         }
     }
 }

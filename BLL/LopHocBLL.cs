@@ -14,5 +14,13 @@ namespace BLL
         {
             return dsLop.Load();
         }
+
+        public static bool CheckClassIDExist(string pclassID)
+        {
+            ListLop listLop = new ListLop();
+            List<Lop> lops = listLop.Load();
+
+            return lops.Exists(x => x.MaLop1 == pclassID);
+        }
     }
 }

@@ -31,10 +31,11 @@ namespace GUI2
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.butSubmit = new System.Windows.Forms.Button();
+            this.textYearOfBirth = new System.Windows.Forms.TextBox();
+            this.textGender = new System.Windows.Forms.TextBox();
+            this.texFullName = new System.Windows.Forms.TextBox();
+            this.textNewStuID = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,19 +43,22 @@ namespace GUI2
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textClassID = new System.Windows.Forms.TextBox();
             this.butAddClass = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textStuID = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.butSubmit);
+            this.groupBox1.Controls.Add(this.textYearOfBirth);
+            this.groupBox1.Controls.Add(this.textGender);
+            this.groupBox1.Controls.Add(this.texFullName);
+            this.groupBox1.Controls.Add(this.textNewStuID);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
@@ -62,43 +66,53 @@ namespace GUI2
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.groupBox1.Location = new System.Drawing.Point(33, 32);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(572, 430);
+            this.groupBox1.Size = new System.Drawing.Size(572, 516);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Add Information";
             // 
-            // textBox4
+            // butSubmit
             // 
-            this.textBox4.Location = new System.Drawing.Point(260, 222);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(199, 27);
-            this.textBox4.TabIndex = 8;
+            this.butSubmit.Location = new System.Drawing.Point(260, 309);
+            this.butSubmit.Name = "butSubmit";
+            this.butSubmit.Size = new System.Drawing.Size(75, 35);
+            this.butSubmit.TabIndex = 9;
+            this.butSubmit.Text = "Submit";
+            this.butSubmit.UseVisualStyleBackColor = true;
+            this.butSubmit.Click += new System.EventHandler(this.butSubmit_Click);
             // 
-            // textBox3
+            // textYearOfBirth
             // 
-            this.textBox3.Location = new System.Drawing.Point(260, 134);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(199, 27);
-            this.textBox3.TabIndex = 7;
+            this.textYearOfBirth.Location = new System.Drawing.Point(260, 222);
+            this.textYearOfBirth.Name = "textYearOfBirth";
+            this.textYearOfBirth.Size = new System.Drawing.Size(199, 27);
+            this.textYearOfBirth.TabIndex = 8;
             // 
-            // textBox2
+            // textGender
             // 
-            this.textBox2.Location = new System.Drawing.Point(260, 63);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(199, 27);
-            this.textBox2.TabIndex = 6;
+            this.textGender.Location = new System.Drawing.Point(260, 134);
+            this.textGender.Name = "textGender";
+            this.textGender.Size = new System.Drawing.Size(199, 27);
+            this.textGender.TabIndex = 7;
             // 
-            // textBox1
+            // texFullName
             // 
-            this.textBox1.Location = new System.Drawing.Point(260, 321);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(199, 27);
-            this.textBox1.TabIndex = 5;
+            this.texFullName.Location = new System.Drawing.Point(260, 63);
+            this.texFullName.Name = "texFullName";
+            this.texFullName.Size = new System.Drawing.Size(199, 27);
+            this.texFullName.TabIndex = 6;
+            // 
+            // textNewStuID
+            // 
+            this.textNewStuID.Location = new System.Drawing.Point(260, 403);
+            this.textNewStuID.Name = "textNewStuID";
+            this.textNewStuID.Size = new System.Drawing.Size(199, 27);
+            this.textNewStuID.TabIndex = 5;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(35, 321);
+            this.label5.Location = new System.Drawing.Point(35, 403);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(124, 20);
             this.label5.TabIndex = 4;
@@ -139,8 +153,10 @@ namespace GUI2
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.textStuID);
+            this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.button1);
-            this.groupBox2.Controls.Add(this.textBox5);
+            this.groupBox2.Controls.Add(this.textClassID);
             this.groupBox2.Controls.Add(this.butAddClass);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -153,7 +169,7 @@ namespace GUI2
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(215, 174);
+            this.button1.Location = new System.Drawing.Point(215, 225);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(140, 27);
             this.button1.TabIndex = 8;
@@ -161,16 +177,16 @@ namespace GUI2
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox5
+            // textClassID
             // 
-            this.textBox5.Location = new System.Drawing.Point(215, 60);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(297, 27);
-            this.textBox5.TabIndex = 7;
+            this.textClassID.Location = new System.Drawing.Point(215, 134);
+            this.textClassID.Name = "textClassID";
+            this.textClassID.Size = new System.Drawing.Size(297, 27);
+            this.textClassID.TabIndex = 7;
             // 
             // butAddClass
             // 
-            this.butAddClass.Location = new System.Drawing.Point(215, 292);
+            this.butAddClass.Location = new System.Drawing.Point(215, 317);
             this.butAddClass.Name = "butAddClass";
             this.butAddClass.Size = new System.Drawing.Size(88, 27);
             this.butAddClass.TabIndex = 3;
@@ -181,17 +197,33 @@ namespace GUI2
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(50, 63);
+            this.label4.Location = new System.Drawing.Point(50, 134);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(72, 20);
             this.label4.TabIndex = 1;
             this.label4.Text = "Class ID: ";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(50, 63);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(88, 20);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "StudentID: ";
+            // 
+            // textStuID
+            // 
+            this.textStuID.Location = new System.Drawing.Point(215, 56);
+            this.textStuID.Name = "textStuID";
+            this.textStuID.Size = new System.Drawing.Size(297, 27);
+            this.textStuID.TabIndex = 10;
+            // 
             // AddStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1283, 503);
+            this.ClientSize = new System.Drawing.Size(1283, 590);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "AddStudent";
@@ -211,15 +243,18 @@ namespace GUI2
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textYearOfBirth;
+        private System.Windows.Forms.TextBox textGender;
+        private System.Windows.Forms.TextBox texFullName;
+        private System.Windows.Forms.TextBox textNewStuID;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textClassID;
         private System.Windows.Forms.Button butAddClass;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button butSubmit;
+        private System.Windows.Forms.TextBox textStuID;
+        private System.Windows.Forms.Label label6;
     }
 }

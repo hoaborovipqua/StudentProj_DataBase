@@ -132,7 +132,6 @@ namespace GUI2
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
 
 
-
         }
 
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)

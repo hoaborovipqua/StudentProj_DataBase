@@ -15,5 +15,7 @@ namespace BLL
         {
             return dsNguoi.Load();
         }
+
+        // them mot nguoi moi 
     }
 }

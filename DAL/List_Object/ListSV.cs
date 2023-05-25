@@ -25,6 +25,7 @@ namespace DAL
 
         public List<SinhVien> Load()
         {
+            list_SV.Clear();
             conn.Open();
             SqlCommand cmd = new SqlCommand("select * from SinhVien", conn);
 
@@ -73,6 +74,150 @@ namespace DAL
             return (stuName, yerofBirth, gender, className, facultyName);
         }
 
+
+        public static bool AddStudentWithID(string maSV, string maDD)
+        {
+            try
+            {
+                // Kết nối tới cơ sở dữ liệu
+                using (SqlConnection conn = SqlConnectionData.Connect())
+                {
+                    conn.Open();
+                    // Bắt đầu giao dịch
+                    using (SqlTransaction transaction = conn.BeginTransaction())
+                    {
+                        try
+                        {
+                            // Tạo câu truy vấn INSERT
+                            string query = "INSERT INTO SinhVien (MaSV, MaDD) VALUES (@MaSV, @MaDD)";
+
+                            // Tạo đối tượng SqlCommand và truyền tham số
+                            using (SqlCommand command = new SqlCommand(query, conn, transaction))
+                            {
+                                command.Parameters.AddWithValue("@MaSV", maSV);
+                                command.Parameters.AddWithValue("@MaDD", maDD);
+
+                                // Thực thi câu truy vấn
+                                int rowsAffected = command.ExecuteNonQuery();
+
+                                // Kiểm tra xem có thành công hay không
+                                if (rowsAffected > 0)
+                                {
+                                    // Hoàn tất giao dịch
+                                    transaction.Commit();
+                                    return true; // Thêm sinh viên thành công
+                                }
+                                else
+                                {
+                                    // Hủy giao dịch
+                                    transaction.Rollback();
+                                    return false; // Thêm sinh viên thất bại
+                                }
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            // Hủy giao dịch nếu có lỗi xảy ra
+                            transaction.Rollback();
+                            return false; // Thêm sinh viên thất bại
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Xử lý ngoại lệ (exception)
+                return false; // Thêm sinh viên thất bại
+            }
+        }
+
+
+        public static string MakeNewStuID(string pmaxID)
+        {
+            string curNumber = pmaxID.Substring(2); 
+            int nextNumber = int.Parse(curNumber) + 1; 
+            string newID = "SV" + nextNumber.ToString("D3"); // Tạo mã mới với số được định dạng thành chuỗi 3 chữ số (VD: SV003)
+            return newID;
+        }
+        
+
+
+        public static bool addNewStudent(string pname, string pgen, int pyob)
+        {
+            ListNguoi listNguoi = new ListNguoi();
+            List<Nguoi> nguois = listNguoi.Load();
+            string maxID = nguois.Max(ng => ng.MaDD1);
+
+            string newPersonID = ListNguoi.MakeNewPersonID(maxID);
+            if(ListNguoi.AddPersonInfo(newPersonID, pname, pyob, pgen))
+            {
+                ListSV listSV = new ListSV();
+                List<SinhVien> sinhViens = listSV.Load();
+                string maxStuID = sinhViens.Max(sv => sv.MaSV1);
+                string newStuID = MakeNewStuID(maxStuID);
+                return AddStudentWithID(newStuID, newPersonID);
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public static bool AddClassIDToStudent(string maSV, string maLop)
+        {
+            try
+            {
+                // Kết nối tới cơ sở dữ liệu
+                using (SqlConnection conn = SqlConnectionData.Connect())
+                {
+                    conn.Open();
+                    // Bắt đầu giao dịch
+                    using (SqlTransaction transaction = conn.BeginTransaction())
+                    {
+                        try
+                        {
+                            // Tạo câu truy vấn UPDATE
+                            string query = "UPDATE SinhVien SET MaLop = @MaLop WHERE MaSV = @MaSV";
+
+                            // Tạo đối tượng SqlCommand và truyền tham số
+                            using (SqlCommand command = new SqlCommand(query, conn, transaction))
+                            {
+                                command.Parameters.AddWithValue("@MaLop", maLop);
+                                command.Parameters.AddWithValue("@MaSV", maSV);
+
+                                // Thực thi câu truy vấn
+                                int rowsAffected = command.ExecuteNonQuery();
+
+                                // Kiểm tra xem có thành công hay không
+                                if (rowsAffected > 0)
+                                {
+                                    // Hoàn tất giao dịch
+                                    transaction.Commit();
+                                    return true; // Thêm mã lớp cho sinh viên thành công
+                                }
+                                else
+                                {
+                                    // Hủy giao dịch
+                                    transaction.Rollback();
+                                    return false; // Thêm mã lớp cho sinh viên thất bại
+                                }
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            // Hủy giao dịch nếu có lỗi xảy ra
+                            transaction.Rollback();
+                            return false; // Thêm mã lớp cho sinh viên thất bại
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Xử lý ngoại lệ (exception)
+                return false; // Thêm mã lớp cho sinh viên thất bại
+            }
+        }
 
 
 
