@@ -16,5 +16,13 @@ namespace BLL
         {
             return dsHoatDong.Load();
         }
+
+        public static bool CheckActivityID(string pActivID)
+        {
+            ListHoatDong listHoatDong = new ListHoatDong();
+            List<HoatDong> hoatDongs = listHoatDong.Load();
+
+            return hoatDongs.Exists(x => x.MaHD1 == pActivID);
+        }
     }
 }

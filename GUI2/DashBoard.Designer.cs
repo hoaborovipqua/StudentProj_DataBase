@@ -59,8 +59,8 @@ namespace GUI2
             this.lookUpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(996, 57);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 3, 0, 3);
+            this.menuStrip1.Size = new System.Drawing.Size(1138, 76);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -73,7 +73,7 @@ namespace GUI2
             this.studentToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("studentToolStripMenuItem.Image")));
             this.studentToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.studentToolStripMenuItem.Name = "studentToolStripMenuItem";
-            this.studentToolStripMenuItem.Size = new System.Drawing.Size(136, 53);
+            this.studentToolStripMenuItem.Size = new System.Drawing.Size(155, 70);
             this.studentToolStripMenuItem.Text = "Student";
             // 
             // viewStudentsToolStripMenuItem
@@ -85,7 +85,7 @@ namespace GUI2
             this.viewStudentsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("viewStudentsToolStripMenuItem.Image")));
             this.viewStudentsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.viewStudentsToolStripMenuItem.Name = "viewStudentsToolStripMenuItem";
-            this.viewStudentsToolStripMenuItem.Size = new System.Drawing.Size(201, 38);
+            this.viewStudentsToolStripMenuItem.Size = new System.Drawing.Size(239, 38);
             this.viewStudentsToolStripMenuItem.Text = "Edit Student";
             this.viewStudentsToolStripMenuItem.Click += new System.EventHandler(this.viewStudentsToolStripMenuItem_Click);
             // 
@@ -93,7 +93,7 @@ namespace GUI2
             // 
             this.addStudentToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("addStudentToolStripMenuItem1.Image")));
             this.addStudentToolStripMenuItem1.Name = "addStudentToolStripMenuItem1";
-            this.addStudentToolStripMenuItem1.Size = new System.Drawing.Size(211, 30);
+            this.addStudentToolStripMenuItem1.Size = new System.Drawing.Size(253, 36);
             this.addStudentToolStripMenuItem1.Text = "Add Student";
             this.addStudentToolStripMenuItem1.Click += new System.EventHandler(this.addStudentToolStripMenuItem1_Click);
             // 
@@ -101,14 +101,14 @@ namespace GUI2
             // 
             this.deleteStudentToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("deleteStudentToolStripMenuItem1.Image")));
             this.deleteStudentToolStripMenuItem1.Name = "deleteStudentToolStripMenuItem1";
-            this.deleteStudentToolStripMenuItem1.Size = new System.Drawing.Size(211, 30);
+            this.deleteStudentToolStripMenuItem1.Size = new System.Drawing.Size(253, 36);
             this.deleteStudentToolStripMenuItem1.Text = "Delete Student";
             // 
             // udateStudentToolStripMenuItem1
             // 
             this.udateStudentToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("udateStudentToolStripMenuItem1.Image")));
             this.udateStudentToolStripMenuItem1.Name = "udateStudentToolStripMenuItem1";
-            this.udateStudentToolStripMenuItem1.Size = new System.Drawing.Size(211, 30);
+            this.udateStudentToolStripMenuItem1.Size = new System.Drawing.Size(253, 36);
             this.udateStudentToolStripMenuItem1.Text = "Udate Student";
             // 
             // addActivityToolStripMenuItem
@@ -116,7 +116,7 @@ namespace GUI2
             this.addActivityToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("addActivityToolStripMenuItem.Image")));
             this.addActivityToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.addActivityToolStripMenuItem.Name = "addActivityToolStripMenuItem";
-            this.addActivityToolStripMenuItem.Size = new System.Drawing.Size(201, 38);
+            this.addActivityToolStripMenuItem.Size = new System.Drawing.Size(239, 38);
             this.addActivityToolStripMenuItem.Text = "Add Activity";
             this.addActivityToolStripMenuItem.Click += new System.EventHandler(this.addActivityToolStripMenuItem_Click);
             // 
@@ -128,7 +128,7 @@ namespace GUI2
             this.regisCourseToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("regisCourseToolStripMenuItem.Image")));
             this.regisCourseToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.regisCourseToolStripMenuItem.Name = "regisCourseToolStripMenuItem";
-            this.regisCourseToolStripMenuItem.Size = new System.Drawing.Size(172, 53);
+            this.regisCourseToolStripMenuItem.Size = new System.Drawing.Size(199, 70);
             this.regisCourseToolStripMenuItem.Text = "Regis Course";
             this.regisCourseToolStripMenuItem.Click += new System.EventHandler(this.regisCourseToolStripMenuItem_Click);
             // 
@@ -140,14 +140,14 @@ namespace GUI2
             this.addSubjectToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("addSubjectToolStripMenuItem.Image")));
             this.addSubjectToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.addSubjectToolStripMenuItem.Name = "addSubjectToolStripMenuItem";
-            this.addSubjectToolStripMenuItem.Size = new System.Drawing.Size(160, 36);
+            this.addSubjectToolStripMenuItem.Size = new System.Drawing.Size(188, 36);
             this.addSubjectToolStripMenuItem.Text = "Subject";
             // 
             // addSubjectToolStripMenuItem1
             // 
             this.addSubjectToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("addSubjectToolStripMenuItem1.Image")));
             this.addSubjectToolStripMenuItem1.Name = "addSubjectToolStripMenuItem1";
-            this.addSubjectToolStripMenuItem1.Size = new System.Drawing.Size(185, 30);
+            this.addSubjectToolStripMenuItem1.Size = new System.Drawing.Size(227, 36);
             this.addSubjectToolStripMenuItem1.Text = "Add Subject";
             this.addSubjectToolStripMenuItem1.Click += new System.EventHandler(this.addSubjectToolStripMenuItem1_Click);
             // 
@@ -155,7 +155,7 @@ namespace GUI2
             // 
             this.editSubjectToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("editSubjectToolStripMenuItem1.Image")));
             this.editSubjectToolStripMenuItem1.Name = "editSubjectToolStripMenuItem1";
-            this.editSubjectToolStripMenuItem1.Size = new System.Drawing.Size(185, 30);
+            this.editSubjectToolStripMenuItem1.Size = new System.Drawing.Size(227, 36);
             this.editSubjectToolStripMenuItem1.Text = "Edit Subject";
             this.editSubjectToolStripMenuItem1.Click += new System.EventHandler(this.editSubjectToolStripMenuItem1_Click);
             // 
@@ -167,7 +167,7 @@ namespace GUI2
             this.lookUpToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("lookUpToolStripMenuItem.Image")));
             this.lookUpToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.lookUpToolStripMenuItem.Name = "lookUpToolStripMenuItem";
-            this.lookUpToolStripMenuItem.Size = new System.Drawing.Size(141, 53);
+            this.lookUpToolStripMenuItem.Size = new System.Drawing.Size(160, 70);
             this.lookUpToolStripMenuItem.Text = "Look Up";
             // 
             // lookUpStudentToolStripMenuItem
@@ -180,14 +180,14 @@ namespace GUI2
             this.lookUpStudentToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("lookUpStudentToolStripMenuItem.Image")));
             this.lookUpStudentToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.lookUpStudentToolStripMenuItem.Name = "lookUpStudentToolStripMenuItem";
-            this.lookUpStudentToolStripMenuItem.Size = new System.Drawing.Size(286, 56);
+            this.lookUpStudentToolStripMenuItem.Size = new System.Drawing.Size(336, 56);
             this.lookUpStudentToolStripMenuItem.Text = "Student Information";
             // 
             // personalInformationToolStripMenuItem
             // 
             this.personalInformationToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("personalInformationToolStripMenuItem.Image")));
             this.personalInformationToolStripMenuItem.Name = "personalInformationToolStripMenuItem";
-            this.personalInformationToolStripMenuItem.Size = new System.Drawing.Size(260, 30);
+            this.personalInformationToolStripMenuItem.Size = new System.Drawing.Size(313, 36);
             this.personalInformationToolStripMenuItem.Text = "Personal information";
             this.personalInformationToolStripMenuItem.Click += new System.EventHandler(this.personalInformationToolStripMenuItem_Click);
             // 
@@ -195,28 +195,28 @@ namespace GUI2
             // 
             this.activityInformationToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("activityInformationToolStripMenuItem.Image")));
             this.activityInformationToolStripMenuItem.Name = "activityInformationToolStripMenuItem";
-            this.activityInformationToolStripMenuItem.Size = new System.Drawing.Size(260, 30);
+            this.activityInformationToolStripMenuItem.Size = new System.Drawing.Size(313, 36);
             this.activityInformationToolStripMenuItem.Text = "Activity Information";
+            this.activityInformationToolStripMenuItem.Click += new System.EventHandler(this.activityInformationToolStripMenuItem_Click);
             // 
             // listStudentsToolStripMenuItem
             // 
             this.listStudentsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("listStudentsToolStripMenuItem.Image")));
             this.listStudentsToolStripMenuItem.Name = "listStudentsToolStripMenuItem";
-            this.listStudentsToolStripMenuItem.Size = new System.Drawing.Size(260, 30);
+            this.listStudentsToolStripMenuItem.Size = new System.Drawing.Size(313, 36);
             this.listStudentsToolStripMenuItem.Text = "List Students";
             this.listStudentsToolStripMenuItem.Click += new System.EventHandler(this.listStudentsToolStripMenuItem_Click);
             // 
             // DashBoard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(996, 556);
+            this.ClientSize = new System.Drawing.Size(1138, 741);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "DashBoard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DashBoard";

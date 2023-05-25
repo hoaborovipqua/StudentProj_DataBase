@@ -36,5 +36,70 @@ namespace DAL.List_Object
             conn.Close();
             return list_cthd;
         }
+
+        public static bool AddActivityDetail(string maSV, string maHK, string maHD)
+        {
+            try
+            {
+                // Kết nối tới cơ sở dữ liệu
+                using (SqlConnection conn = SqlConnectionData.Connect())
+                {
+                    conn.Open();
+                    // Bắt đầu giao dịch
+                    using (SqlTransaction transaction = conn.BeginTransaction())
+                    {
+                        try
+                        {
+                            // Tạo câu truy vấn INSERT
+                            string query = "INSERT INTO ChiTietHoatDong (MaSV, MaHK, MaHD) VALUES (@MaSV, @MaHK, @MaHD)";
+
+                            // Tạo đối tượng SqlCommand và truyền tham số
+                            using (SqlCommand command = new SqlCommand(query, conn, transaction))
+                            {
+                                command.Parameters.AddWithValue("@MaSV", maSV);
+                                command.Parameters.AddWithValue("@MaHK", maHK);
+                                command.Parameters.AddWithValue("@MaHD", maHD);
+
+                                // Thực thi câu truy vấn
+                                int rowsAffected = command.ExecuteNonQuery();
+
+                                // Kiểm tra xem có thành công hay không
+                                if (rowsAffected > 0)
+                                {
+                                    // Hoàn tất giao dịch
+                                    transaction.Commit();
+                                    return true; // Thêm đối tượng thành công
+                                }
+                                else
+                                {
+                                    // Hủy giao dịch
+                                    transaction.Rollback();
+                                    return false; // Thêm đối tượng thất bại
+                                }
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            // Hủy giao dịch nếu có lỗi xảy ra
+                            transaction.Rollback();
+                            Console.WriteLine("Lỗi khi thêm đối tượng vào cơ sở dữ liệu: " + ex.Message);
+                            return false; // Thêm đối tượng thất bại
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Xử lý ngoại lệ (exception)
+                Console.WriteLine("Lỗi khi kết nối đến cơ sở dữ liệu: " + ex.Message);
+                return false; // Thêm đối tượng thất bại
+            }
+        }
+
+        public static List<ChiTietHoatDong> GetListStudentActivities(string pstuID)
+        {
+            return ListChiTietHoatDong.GetListStudentActivities(pstuID);
+        }
+
     }
 }

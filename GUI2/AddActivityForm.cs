@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DTO;
+using BLL;
+using DTO.Object;
 
 namespace GUI2
 {
@@ -19,9 +22,16 @@ namespace GUI2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string mssv = txtMSSV.Text;
-            string maHD = txtMHD.Text;
-            string maHK = txtMHK.Text;
+            
+            if(ChiTietHoatDongBLL.AddActivityDetail(txtStuID.Text, txtSemesID.Text, txtActivID.Text))
+            {
+                MessageBox.Show("Add Successfully!");
+            }
+            else
+            {
+                MessageBox.Show("Add Failure!");
+            }
+
         }
 
         private void AddActivityForm_Load(object sender, EventArgs e)

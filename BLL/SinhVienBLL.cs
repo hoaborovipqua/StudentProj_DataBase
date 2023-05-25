@@ -4,6 +4,7 @@ using System.Text;
 using DTO;
 using DAL;
 using System.Linq;
+using DTO.Object;
 
 namespace BLL
 {
@@ -43,5 +44,7 @@ namespace BLL
         {
             return ListSV.AddClassIDToStudent(pstuID,pclassID);
         }
+
+        
     }
 }

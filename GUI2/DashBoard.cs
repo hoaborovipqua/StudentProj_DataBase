@@ -76,5 +76,11 @@ namespace GUI2
             AddStudent addStudent = new AddStudent();
             addStudent.Show();
         }
+
+        private void activityInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Student_Avtivities student_Avtivities = new Student_Avtivities();
+            student_Avtivities.Show();
+        }
     }
 }
