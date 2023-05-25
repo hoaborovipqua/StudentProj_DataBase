@@ -21,8 +21,11 @@ namespace GUI2
             InitializeComponent();
         }
 
+
+
         private void btnSubmit_Click(object sender, EventArgs e)
         {
+            LoadALLData.inputStuID = txtStdID.Text;
             LoadALLData.Load_dsSinhVien();
             if (SinhVienBLL.checkExitStuID(txtStdID.Text, LoadALLData.dsSinhVien))
             {

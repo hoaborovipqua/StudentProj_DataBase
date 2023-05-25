@@ -38,6 +38,10 @@ namespace GUI2
         public static List<GiangVien_MonHoc> dsGiangVien_MonHoc = new List<GiangVien_MonHoc>();
 
 
+        public static string  inputStuID = "";
+        public static string subjectRegisteredID = "";
+        
+
         public static void Load_dsLop()
         {
             dsLop = dt.Load();

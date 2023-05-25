@@ -60,12 +60,12 @@
             this.groupBox1.Controls.Add(this.lbMSSV1);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.groupBox1.Location = new System.Drawing.Point(10, 11);
+            this.groupBox1.Location = new System.Drawing.Point(16, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(393, 220);
+            this.groupBox1.Size = new System.Drawing.Size(420, 245);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Nhập Thông Tin:";
+            this.groupBox1.Text = "Enterring Information";
             // 
             // txtMHK
             // 
@@ -90,7 +90,7 @@
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(214, 41);
             this.btnSubmit.TabIndex = 3;
-            this.btnSubmit.Text = "Thêm Hoạt Động";
+            this.btnSubmit.Text = "Add Activity";
             this.btnSubmit.UseVisualStyleBackColor = false;
             this.btnSubmit.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -107,9 +107,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(5, 123);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 22);
+            this.label2.Size = new System.Drawing.Size(108, 22);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Mã học kỳ: ";
+            this.label2.Text = "SemesterID:";
             // 
             // label1
             // 
@@ -117,9 +117,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(5, 78);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 22);
+            this.label1.Size = new System.Drawing.Size(89, 22);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Mã hoạt động: ";
+            this.label1.Text = "ActivityID:";
             // 
             // lbMSSV1
             // 
@@ -127,15 +127,15 @@
             this.lbMSSV1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbMSSV1.Location = new System.Drawing.Point(5, 35);
             this.lbMSSV1.Name = "lbMSSV1";
-            this.lbMSSV1.Size = new System.Drawing.Size(70, 22);
+            this.lbMSSV1.Size = new System.Drawing.Size(94, 22);
             this.lbMSSV1.TabIndex = 0;
-            this.lbMSSV1.Text = "MSSV: ";
+            this.lbMSSV1.Text = "StudentID:";
             // 
             // AddActivityForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(414, 252);
+            this.ClientSize = new System.Drawing.Size(456, 283);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lbMssv);
             this.Name = "AddActivityForm";

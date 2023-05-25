@@ -21,5 +21,11 @@ namespace BLL
             return lsstu.Any(x => x.MaSV1 == pstuid);
         }
 
+        public static (string , int? , string , string , string ) GetStudentInfor(string pstuID)
+        {
+
+            return ListSV.GetStudentInfor(pstuID);
+        }
+
     }
 }

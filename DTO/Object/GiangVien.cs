@@ -22,19 +22,6 @@ namespace DTO
 
         public GiangVien() { }
 
-        //public void nhap_GV_Console()
-        //{
-        //    Console.Write("Nhap vao ma GV: ");
-        //    this.maGV = Console.ReadLine();
-        //    this.khoa_GV.nhap_Khoa_Console();
-        //}
-        //public override void xuat()
-        //{
-        //    Console.Write("{0} /", this.maGV);
-        //    this.khoa_GV.xuat();
-        //    base.xuat();
-        //}
-
         
     }
 }

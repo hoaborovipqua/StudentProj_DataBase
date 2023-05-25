@@ -28,19 +28,30 @@ namespace GUI2
             if(GiangVien_MonHocBLL.checkExitLecIDSubID(t1, t2, LoadALLData.dsGiangVien_MonHoc))
             {
                 // thêm vào bảng chi tiết đăng kí môn học 
-                MessageBox.Show("Co ton tai trong bang giang vien mon hoc");
+                if( ChiTietDangKiMonHocBLL.AddSubjectRegisDetail(t1, t2, LoadALLData.inputStuID))
+                {
+                    MessageBox.Show("Add Successfully!");
+                    // làm form hiển thị ds mon hoc da dk hoc vao csdl check truc tiep du lieu da thêm vào 
+                }
+                else
+                {
+                    MessageBox.Show("Add Failure!");
+                }
             }
             else
             {
                 MessageBox.Show("Subject Register ID not Exist!");
             }
-
-
         }
 
         private void but_Exit_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

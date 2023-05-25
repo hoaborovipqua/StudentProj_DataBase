@@ -23,22 +23,7 @@ namespace DTO
         public int NamThanhLap1 { get => NamThanhLap; set => NamThanhLap = value; }
 
 
-        //public void nhap_Khoa()
-        //{
-        //    Console.Write("Nhap vao ma khoa: ");
-        //    this.maKhoa = Console.ReadLine();
-        //    Console.Write("Nhap vao ten khoa: ");
-        //    this.tenKhoa = Console.ReadLine();
-        //}
-        //public void xuat()
-        //{ 
-        //    Console.Write("{0} / {1} / ", this.maKhoa, this.tenKhoa);
-        //}
 
-        //public void nhap_Khoa(string filePath)
-        //{
-
-        //}
 
     }
 }

@@ -39,15 +39,16 @@ namespace GUI2
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(53, 44);
+            this.label1.Location = new System.Drawing.Point(32, 46);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(129, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "SubjectRegisID:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // textBox_SubjectRegisID
             // 
-            this.textBox_SubjectRegisID.Location = new System.Drawing.Point(277, 44);
+            this.textBox_SubjectRegisID.Location = new System.Drawing.Point(236, 44);
             this.textBox_SubjectRegisID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_SubjectRegisID.Name = "textBox_SubjectRegisID";
             this.textBox_SubjectRegisID.Size = new System.Drawing.Size(238, 23);
@@ -56,7 +57,7 @@ namespace GUI2
             // but_Regis
             // 
             this.but_Regis.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.but_Regis.Location = new System.Drawing.Point(277, 168);
+            this.but_Regis.Location = new System.Drawing.Point(236, 125);
             this.but_Regis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.but_Regis.Name = "but_Regis";
             this.but_Regis.Size = new System.Drawing.Size(82, 33);
@@ -68,7 +69,7 @@ namespace GUI2
             // but_Exit
             // 
             this.but_Exit.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.but_Exit.Location = new System.Drawing.Point(432, 168);
+            this.but_Exit.Location = new System.Drawing.Point(392, 125);
             this.but_Exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.but_Exit.Name = "but_Exit";
             this.but_Exit.Size = new System.Drawing.Size(82, 33);
@@ -81,7 +82,7 @@ namespace GUI2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(700, 338);
+            this.ClientSize = new System.Drawing.Size(575, 219);
             this.Controls.Add(this.but_Exit);
             this.Controls.Add(this.but_Regis);
             this.Controls.Add(this.textBox_SubjectRegisID);

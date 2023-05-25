@@ -1,5 +1,4 @@
-﻿using DTO;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -55,6 +54,24 @@ namespace GUI2
         {
             RegisterCourseForm register = new RegisterCourseForm();
             register.Show();
+        }
+
+        private void personalInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            InputStudentID_RegisSub inputStudentID = new InputStudentID_RegisSub();
+            inputStudentID.Show();
+        }
+
+        private void editSubjectToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            InputStudentID_EditSub inputStudentID_EditSub = new InputStudentID_EditSub();
+            inputStudentID_EditSub.Show();
+        }
+
+        private void addStudentToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            AddStudent addStudent = new AddStudent();
+            addStudent.Show();
         }
     }
 }

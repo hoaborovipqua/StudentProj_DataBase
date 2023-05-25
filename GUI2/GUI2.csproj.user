@@ -4,13 +4,28 @@
     <Compile Update="AddActivityForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="AddStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="DangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="DashBoard.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="DeleteSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="InputStudentID_EditSub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="InputStudentID_RegisSub.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="InputSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Personal_Information.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="RegisterCourseForm.cs">
@@ -20,6 +35,15 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="ShowStudentsGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SubjectsRegistered_Student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ViewListClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ViewListFaculty.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

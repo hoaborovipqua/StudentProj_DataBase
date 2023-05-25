@@ -44,7 +44,7 @@ namespace GUI2
             this.dataGridViewSubject.Name = "dataGridViewSubject";
             this.dataGridViewSubject.RowHeadersWidth = 51;
             this.dataGridViewSubject.RowTemplate.Height = 29;
-            this.dataGridViewSubject.Size = new System.Drawing.Size(539, 213);
+            this.dataGridViewSubject.Size = new System.Drawing.Size(433, 213);
             this.dataGridViewSubject.TabIndex = 0;
             // 
             // label1

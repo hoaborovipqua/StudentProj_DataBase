@@ -25,12 +25,5 @@ namespace DTO
         public Nguoi() { }
         
 
-
-        //public virtual void xuat()
-        //{
-        //    Console.WriteLine("{0} / {1} / {2} / {3} ", this.MaDD, this.hoTen, this.ngaySinh, this.diaChi);
-        //}
-
-
     }
 }

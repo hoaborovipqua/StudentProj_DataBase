@@ -25,7 +25,5 @@ namespace DTO.Object
         public string TenHK1 { get => TenHK; set => TenHK = value; }
         public int NamHoc1 { get => NamHoc; set => NamHoc = value; }
 
-
-
     }
 }

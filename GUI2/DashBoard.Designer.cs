@@ -93,21 +93,22 @@ namespace GUI2
             // 
             this.addStudentToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("addStudentToolStripMenuItem1.Image")));
             this.addStudentToolStripMenuItem1.Name = "addStudentToolStripMenuItem1";
-            this.addStudentToolStripMenuItem1.Size = new System.Drawing.Size(207, 30);
+            this.addStudentToolStripMenuItem1.Size = new System.Drawing.Size(211, 30);
             this.addStudentToolStripMenuItem1.Text = "Add Student";
+            this.addStudentToolStripMenuItem1.Click += new System.EventHandler(this.addStudentToolStripMenuItem1_Click);
             // 
             // deleteStudentToolStripMenuItem1
             // 
             this.deleteStudentToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("deleteStudentToolStripMenuItem1.Image")));
             this.deleteStudentToolStripMenuItem1.Name = "deleteStudentToolStripMenuItem1";
-            this.deleteStudentToolStripMenuItem1.Size = new System.Drawing.Size(207, 30);
+            this.deleteStudentToolStripMenuItem1.Size = new System.Drawing.Size(211, 30);
             this.deleteStudentToolStripMenuItem1.Text = "Delete Student";
             // 
             // udateStudentToolStripMenuItem1
             // 
             this.udateStudentToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("udateStudentToolStripMenuItem1.Image")));
             this.udateStudentToolStripMenuItem1.Name = "udateStudentToolStripMenuItem1";
-            this.udateStudentToolStripMenuItem1.Size = new System.Drawing.Size(207, 30);
+            this.udateStudentToolStripMenuItem1.Size = new System.Drawing.Size(211, 30);
             this.udateStudentToolStripMenuItem1.Text = "Udate Student";
             // 
             // addActivityToolStripMenuItem
@@ -139,14 +140,14 @@ namespace GUI2
             this.addSubjectToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("addSubjectToolStripMenuItem.Image")));
             this.addSubjectToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.addSubjectToolStripMenuItem.Name = "addSubjectToolStripMenuItem";
-            this.addSubjectToolStripMenuItem.Size = new System.Drawing.Size(194, 36);
+            this.addSubjectToolStripMenuItem.Size = new System.Drawing.Size(160, 36);
             this.addSubjectToolStripMenuItem.Text = "Subject";
             // 
             // addSubjectToolStripMenuItem1
             // 
             this.addSubjectToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("addSubjectToolStripMenuItem1.Image")));
             this.addSubjectToolStripMenuItem1.Name = "addSubjectToolStripMenuItem1";
-            this.addSubjectToolStripMenuItem1.Size = new System.Drawing.Size(189, 30);
+            this.addSubjectToolStripMenuItem1.Size = new System.Drawing.Size(185, 30);
             this.addSubjectToolStripMenuItem1.Text = "Add Subject";
             this.addSubjectToolStripMenuItem1.Click += new System.EventHandler(this.addSubjectToolStripMenuItem1_Click);
             // 
@@ -154,8 +155,9 @@ namespace GUI2
             // 
             this.editSubjectToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("editSubjectToolStripMenuItem1.Image")));
             this.editSubjectToolStripMenuItem1.Name = "editSubjectToolStripMenuItem1";
-            this.editSubjectToolStripMenuItem1.Size = new System.Drawing.Size(189, 30);
+            this.editSubjectToolStripMenuItem1.Size = new System.Drawing.Size(185, 30);
             this.editSubjectToolStripMenuItem1.Text = "Edit Subject";
+            this.editSubjectToolStripMenuItem1.Click += new System.EventHandler(this.editSubjectToolStripMenuItem1_Click);
             // 
             // lookUpToolStripMenuItem
             // 
@@ -187,6 +189,7 @@ namespace GUI2
             this.personalInformationToolStripMenuItem.Name = "personalInformationToolStripMenuItem";
             this.personalInformationToolStripMenuItem.Size = new System.Drawing.Size(260, 30);
             this.personalInformationToolStripMenuItem.Text = "Personal information";
+            this.personalInformationToolStripMenuItem.Click += new System.EventHandler(this.personalInformationToolStripMenuItem_Click);
             // 
             // activityInformationToolStripMenuItem
             // 
